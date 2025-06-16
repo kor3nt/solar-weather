@@ -18,7 +18,7 @@ public class SolarWeatherApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedMethods("GET", "PUT", "POST", "DELETE").allowedOrigins("http://localhost:3000").allowedHeaders("*");
+				registry.addMapping("/**").allowedMethods("GET", "PUT", "POST", "DELETE").allowedOrigins("http://localhost:3000", "https://solar-app-j354.onrender.com").allowedHeaders("*");
 			}
 		};
 	}
